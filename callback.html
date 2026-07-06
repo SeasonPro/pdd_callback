@@ -6,7 +6,7 @@
   <script>
     var code = new URLSearchParams(location.search).get('code');
     if (code) {
-      location.href = 'http://localhost:5001/api/pdd/auth/callback?code=' + code;
+      location.href = 'http://localhost:5110/api/pdd/auth/callback?code=' + code;
     } else {
       document.body.innerHTML = '<p style="color:red">授权失败，缺少 code</p>';
     }
